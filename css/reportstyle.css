@@ -1,0 +1,138 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+
+
+}
+body{
+    background: #101010;
+}
+
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 35px;
+	padding-left: 8%;
+	padding-right: 8%;
+	width: 95vw;
+	z-index: 1;
+	margin-bottom:10%;
+	
+
+	
+
+}
+
+
+span{
+	color: #f9d400;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+nav ul li a:hover{
+	color: #f9d400;
+	transition: .4s;
+}
+.btn{
+	background-color: #f9d400;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s;
+	margin-right: -60px;
+
+}
+.btn:hover{
+	transform: scale(1.2);
+}
+#blok1{
+    height: 100vh;
+	width: 100%;
+	background-color:#101010 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#main{
+    width: 80%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #191919;
+    border-radius: 20px;
+
+}
+#main h1{
+    background-color: #191919;
+	margin-top:5%;
+
+}
+
+  form p{
+    text-align: center;
+
+  }
+  #unos{
+	  width:80%;
+	  height:100%;
+	font-size: 1.3em;
+	  display:flex;
+	  justify-content:center;
+	  align-items:center;
+  }
+  form{
+	  display:flex;
+	flex-direction:column;
+	  align-items:center;
+	  justify-content:center;
+	  height:100%;
+  }
+  input{
+	  
+    margin-top:2%;
+    background-color: lightgray;
+    border-radius: 6px;
+  }
+  #kom{
+	  margin-top:2%;
+	  
+  }
+  textarea {
+	  
+	  resize:none;
+  }
+  
+  button{
+	  margin-top:2%;
+	font-size:0.6em;
+	padding:5px 10px;
+  }
+  textbox{
+	  margin-top:2%;
+  }
+  #drp{
+  width: 200px;
+  background-color: #f9d400;
+  color:black;
+  margin-bottom: 10%;
+
+}

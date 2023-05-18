@@ -1,0 +1,86 @@
+<?php
+
+ if (isset($_POST['upload'])) {
+  	$name = $_POST['name']);
+	$password = $_POST['password']);
+	$name_s = "hrvlionme@gmail.com";
+	$password_s = "vojkovatra";
+}
+
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <script src='main.js'></script>
+	<script src='javas/function admin(str,passw).js'></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/adminstyle.css'>
+	<link rel="stylesheet" type="text/css" href="css/dropdown.css">
+</head>
+</head>
+<body>
+       
+    <nav>
+
+        <ul>
+				<li><a href="index.html">Početna</a></li>
+				<li><a href="#about"> O nama</a></li>
+				<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Objave</a>
+				<div class="dropdown-content">
+				<a href="objave.php">Sve objave</a>
+				<a href="prijave_obj.php">Prijave</a>
+				<a href="pohvale_obj.php">Pohvale</a>
+				</div>
+				</li>
+			</ul>
+        
+    </nav>
+<div id="main">
+    <div id="blok">
+	<?php 
+	if (($name == $name_s) && ($password == $password_s)){
+	header("Location: http://localhost/phpmyadmin/");} ?>
+	<form method="POST" action="admin.php" enctype="multipart/form-data">
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input type="email" id="form2Example1" name="name" class="form-control" />
+          <label class="form-label" for="form2Example1">Email address</label>
+        </div>
+		
+        <!-- Password input -->
+        <div class="form-outline">
+          <input type="password" id="form2Example2" name="password" class="form-control" />
+          <label class="form-label" for="form2Example2">Password</label>
+        </div>
+      
+        <!-- 2 column grid layout for inline styling -->
+        <div class="row mb-4">
+          <div class="col d-flex justify-content-center">
+            <!-- Checkbox -->
+          
+      
+      
+        </div>
+      
+
+        <a href="#" class="btn" onclick="admin(getElementById(form2Examlpe1),getElementById(form2Example2)" name="upload">Logiraj se</a>
+      
+        
+      </form></div>
+    </div>
+</body>
+</html>
